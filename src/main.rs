@@ -54,7 +54,7 @@ async fn main() -> std::io::Result<()> {
             .route("/", web::get().to(hello))
             .route("/log", web::post().to(print_body))
     })
-    .bind("127.0.0.0:8080")?;
+    .bind("0.0.0.0:8080")?;
 
     info!("Server is running on port : 8080");
     
