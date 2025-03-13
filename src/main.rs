@@ -56,7 +56,7 @@ async fn main() -> std::io::Result<()> {
     })
     .bind("0.0.0.0:8080")?;
 
-    println!("Server is running on port : 8080");
+    info!("Server is running on port : 8080");
     
     server.run().await
 }
