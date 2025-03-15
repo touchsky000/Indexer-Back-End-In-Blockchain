@@ -46,7 +46,7 @@ async fn main() -> std::io::Result<()> {
     // Initialize the logger using env_logger
     env_logger::Builder::from_env(Env::default().default_filter_or("info"))
         .init();
-    // werwerwer
+    // werwerwerqweqwe
     // Start the HTTP server with logging and CORS middleware
     let server = HttpServer::new(|| {
         App::new()
