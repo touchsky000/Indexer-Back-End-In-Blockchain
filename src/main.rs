@@ -19,7 +19,7 @@ struct MyQuery {
 
 async fn hello(query: web::Query<MyQuery>) -> impl Responder {
     // Access query parameters
-    info!("Received query parameters: name = {}, age = {:?}", query.name, query.age);
+    info!("Received query parameters from client: name = {}, age = {:?}", query.name, query.age);
     
     HttpResponse::Ok().json(query.into_inner()) // Returning the query parameters as JSON
 }
