@@ -16,9 +16,9 @@ struct MyQuery {
     age: Option<u32>, // Optional query parameter
 }
 
-async fn get(){
+// async fn get(){
     
-}
+// }
 
 async fn hello(query: web::Query<MyQuery>) -> impl Responder {
     // Access query parameters
@@ -28,7 +28,7 @@ async fn hello(query: web::Query<MyQuery>) -> impl Responder {
 }
 
 
-//This part is post ruquest
+//This part is post ruquest qwe
 async fn print_body(body: web::Bytes) -> impl Responder {
     // Convert the Bytes to a String
     match String::from_utf8(body.to_vec()) {
