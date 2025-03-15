@@ -16,7 +16,7 @@ struct MyQuery {
     age: Option<u32>, // Optional query parameter
 }
 
-
+//This hello function
 async fn hello(query: web::Query<MyQuery>) -> impl Responder {
     // Access query parameters
     info!("Received query parameters from client: name = {}, age = {:?}", query.name, query.age);
