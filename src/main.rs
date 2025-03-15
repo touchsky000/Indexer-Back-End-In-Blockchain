@@ -27,6 +27,8 @@ async fn hello(query: web::Query<MyQuery>) -> impl Responder {
     HttpResponse::Ok().json(query.into_inner()) // Returning the query parameters as JSON
 }
 
+
+//This part is post ruquest
 async fn print_body(body: web::Bytes) -> impl Responder {
     // Convert the Bytes to a String
     match String::from_utf8(body.to_vec()) {
