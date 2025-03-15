@@ -41,6 +41,9 @@ async fn print_body(body: web::Bytes) -> impl Responder {
     }
 }
 
+
+//This main function
+
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     // Initialize the logger using env_logger
