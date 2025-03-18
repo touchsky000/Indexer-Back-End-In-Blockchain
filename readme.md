@@ -19,5 +19,6 @@ docker build -t cargo-backend
 
 ```
 docker run -p 8080:8080 cargo-backend
+docker run --network=host cargo-backend
 ```
 
