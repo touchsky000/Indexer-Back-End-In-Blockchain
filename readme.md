@@ -12,7 +12,7 @@ Docker: 28.0.1
 ### Project Build
 
 ```
-docker build -t cargo-backend
+docker build -t cargo-backend .
 ```
 
 ### Project Execution
